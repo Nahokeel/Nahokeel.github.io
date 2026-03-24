@@ -319,6 +319,44 @@ h3 {
   margin-bottom: 0.65rem;
 }
 
+.certificate-zoom-trigger {
+  cursor: zoom-in;
+}
+
+.certificate-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(2, 6, 14, 0.88);
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+}
+
+.certificate-lightbox img {
+  max-width: min(1100px, 95vw);
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #0f1422;
+}
+
+.certificate-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(15, 20, 34, 0.9);
+  color: var(--text);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .resume-card {
   padding: 1rem;
 }

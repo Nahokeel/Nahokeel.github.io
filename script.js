@@ -6,6 +6,10 @@ const tabPanels = document.querySelectorAll(".tab-panel");
 const projectTiles = document.querySelectorAll(".project-tile");
 const projectDetailViewer = document.getElementById("project-detail-viewer");
 const projectDetailContent = document.getElementById("project-detail-content");
+const certificateZoomTriggers = document.querySelectorAll(".certificate-zoom-trigger");
+const certificateLightbox = document.getElementById("certificateLightbox");
+const certificateLightboxImage = document.getElementById("certificateLightboxImage");
+const certificateLightboxClose = document.getElementById("certificateLightboxClose");
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -146,6 +150,46 @@ projectTiles.forEach((tile) => {
     await openProject(projectId, projectPage);
   });
 });
+
+function closeCertificateLightbox() {
+  if (!certificateLightbox || !certificateLightboxImage) {
+    return;
+  }
+
+  certificateLightbox.hidden = true;
+  certificateLightboxImage.src = "";
+  certificateLightboxImage.alt = "";
+}
+
+certificateZoomTriggers.forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    if (!certificateLightbox || !certificateLightboxImage) {
+      return;
+    }
+
+    const certSrc = trigger.dataset.certSrc || trigger.getAttribute("src") || "";
+    const certAlt = trigger.dataset.certAlt || trigger.getAttribute("alt") || "Certificate";
+
+    certificateLightboxImage.src = certSrc;
+    certificateLightboxImage.alt = certAlt;
+    certificateLightbox.hidden = false;
+  });
+});
+
+if (certificateLightbox && certificateLightboxClose) {
+  certificateLightboxClose.addEventListener("click", closeCertificateLightbox);
+  certificateLightbox.addEventListener("click", (event) => {
+    if (event.target === certificateLightbox) {
+      closeCertificateLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !certificateLightbox.hidden) {
+      closeCertificateLightbox();
+    }
+  });
+}
 
 setActiveTab();
 window.addEventListener("hashchange", setActiveTab);
