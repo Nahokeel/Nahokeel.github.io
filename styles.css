@@ -407,34 +407,32 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.hero-head {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  margin-bottom: 0.7rem;
+.project-hero--center {
+  text-align: center;
 }
 
-.hero-head h2 {
+.project-hero h2 {
   font-size: 1.8rem;
+  margin: 0.2rem 0 0;
 }
 
 .hero-logo {
-  width: 84px;
-  height: 84px;
+  width: 112px;
+  height: 112px;
   border-radius: 12px;
   border: 1px solid var(--line);
   object-fit: contain;
   background: #0f1422;
   padding: 0.35rem;
+  display: block;
+  margin: 0 auto;
 }
 
-.hero-icon {
-  width: 84px;
-  height: 84px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  object-fit: cover;
-  background: #0f1422;
+.hero-logo--feature {
+  width: min(100%, 440px);
+  height: auto;
+  max-height: 220px;
+  margin-bottom: 0.7rem;
 }
 
 .project-section {
@@ -456,26 +454,6 @@ h3 {
 .project-hero p {
   color: var(--muted);
   margin: 0.55rem 0 0;
-}
-
-.close-project-btn {
-  margin-top: 1rem;
-  appearance: none;
-  -webkit-appearance: none;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--text);
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  font: inherit;
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color 180ms ease, background 180ms ease;
-}
-
-.close-project-btn:hover {
-  border-color: var(--gold);
-  background: rgba(246, 196, 83, 0.1);
 }
 
 .site-footer {

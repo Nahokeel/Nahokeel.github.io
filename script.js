@@ -5,7 +5,6 @@ const tabLinks = document.querySelectorAll(".tab-link");
 const tabPanels = document.querySelectorAll(".tab-panel");
 const projectTiles = document.querySelectorAll(".project-tile");
 const projectDetails = document.querySelectorAll(".project-detail");
-const closeProjectBtns = document.querySelectorAll(".close-project-btn");
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -63,10 +62,6 @@ projectTiles.forEach((tile) => {
     const projectId = tile.dataset.project;
     openProject(projectId);
   });
-});
-
-closeProjectBtns.forEach((btn) => {
-  btn.addEventListener("click", closeAllProjects);
 });
 
 setActiveTab();
