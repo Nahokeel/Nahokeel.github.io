@@ -495,6 +495,15 @@ a.project-tile:hover {
   background: #0f1422;
 }
 
+.showcase-hero-logo {
+  width: min(100%, 520px);
+  max-height: 230px;
+  object-fit: contain;
+  display: block;
+  margin: 0.2rem auto 0.5rem;
+  border-radius: 12px;
+}
+
 .showcase-header h3 {
   font-size: 1.2rem;
   margin-bottom: 0.15rem;

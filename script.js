@@ -97,6 +97,6 @@ if (portfolioFilterButtons.length && projectCardButtons.length && projectDetailP
     });
   });
 
-  setPortfolioCategory("personal");
-  setActiveProject("luarpg");
+  setPortfolioCategory("academic");
+  setActiveProject("academic-placeholder");
 }

@@ -150,25 +150,25 @@
             <button
               class="portfolio-filter-btn is-active"
               type="button"
-              data-category="personal"
+              data-category="academic"
               aria-selected="true"
             >
-              Personal Projects
+              Academic Projects
             </button>
             <button
               class="portfolio-filter-btn"
               type="button"
-              data-category="academic"
+              data-category="personal"
               aria-selected="false"
             >
-              Academic Projects
+              Personal Projects
             </button>
           </div>
 
           <div class="portfolio-category-panel is-active" data-category-panel="personal">
             <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Personal project cards">
               <button
-                class="project-tile project-card-btn is-active"
+                class="project-tile project-card-btn"
                 type="button"
                 data-category="personal"
                 data-project="luarpg"
@@ -182,7 +182,7 @@
           <div class="portfolio-category-panel" data-category-panel="academic">
             <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Academic project cards">
               <button
-                class="project-tile project-tile--empty project-card-btn"
+                class="project-tile project-tile--empty project-card-btn is-active"
                 type="button"
                 data-category="academic"
                 data-project="academic-placeholder"
@@ -195,7 +195,7 @@
           </div>
 
           <section class="project-detail" id="projectDetail" aria-live="polite">
-            <article class="project-detail-pane is-active" data-project="luarpg">
+            <article class="project-detail-pane" data-project="luarpg">
               <header class="showcase-header">
                 <img
                   class="showcase-logo"
@@ -207,6 +207,12 @@
                   <p class="showcase-subtitle">Personal Project • Action/Adventure • PC</p>
                 </div>
               </header>
+
+              <img
+                class="showcase-hero-logo"
+                src="portfolio/Personal/LuaRPG/Logo.png"
+                alt="LuaRPG featured logo"
+              />
 
               <p class="showcase-intro">
                 LuaRPG is a simple RPG roguelike built with the LOVE 2D framework.
@@ -238,7 +244,7 @@
               </section>
             </article>
 
-            <article class="project-detail-pane" data-project="academic-placeholder">
+            <article class="project-detail-pane is-active" data-project="academic-placeholder">
               <header class="showcase-header">
                 <img
                   class="showcase-logo"
