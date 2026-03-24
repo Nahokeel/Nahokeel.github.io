@@ -142,54 +142,32 @@
           <div class="section-head">
             <h2>Portfolio</h2>
             <p>
-              Choose a category and open each project page.
+              Click a project card to open its full showcase page.
             </p>
           </div>
 
-          <div class="portfolio-categories" role="tablist" aria-label="Project categories">
-            <button
-              class="category-btn is-active"
-              type="button"
-              data-category="personal"
-              role="tab"
-              aria-selected="true"
-            >
-              Personal Project
-            </button>
-            <button
-              class="category-btn"
-              type="button"
-              data-category="academic"
-              role="tab"
-              aria-selected="false"
-            >
-              Academic Project
-            </button>
-          </div>
-
-          <div class="project-directory" aria-label="Project list">
-            <a
-              class="project-list-item"
-              data-category="personal"
-              href="portfolio/Personal/LuaRPG/index.html"
-            >
-              <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
-              <div>
+          <section class="project-group" aria-label="Personal projects">
+            <h3>Personal Projects</h3>
+            <div class="project-cards-grid">
+              <a class="project-tile" href="portfolio/Personal/LuaRPG/index.html">
+                <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
                 <h4>LuaRPG</h4>
-                <p>Personal game project showcase</p>
-              </div>
-              <span>Open</span>
-            </a>
+              </a>
+            </div>
+          </section>
 
-            <article class="project-list-item project-list-item--empty" data-category="academic">
-              <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
-              <div>
-                <h4>No Academic Project Yet</h4>
-                <p>Add an HTML file in portfolio/Academic to list your school projects.</p>
-              </div>
-              <span>Soon</span>
-            </article>
-          </div>
+          <section class="project-group" aria-label="Academic projects">
+            <h3>Academic Projects</h3>
+            <div class="project-cards-grid">
+              <article class="project-tile project-tile--empty">
+                <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
+                <h4>Coming Soon</h4>
+              </article>
+            </div>
+            <p class="project-note">
+              Add your academic project pages inside <strong>portfolio/Academic</strong>.
+            </p>
+          </section>
         </section>
 
         <footer class="site-footer">
