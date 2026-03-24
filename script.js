@@ -4,6 +4,7 @@ const topNav = document.getElementById("topNav");
 const tabLinks = document.querySelectorAll(".tab-link");
 const tabPanels = document.querySelectorAll(".tab-panel");
 const portfolioFilterButtons = document.querySelectorAll(".portfolio-filter-btn");
+const portfolioCategoryPanels = document.querySelectorAll(".portfolio-category-panel");
 const projectCardButtons = document.querySelectorAll(".project-card-btn");
 const projectDetailPanes = document.querySelectorAll(".project-detail-pane");
 
@@ -50,6 +51,11 @@ function setPortfolioCategory(category) {
     const isActive = button.dataset.category === category;
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-selected", String(isActive));
+  });
+
+  portfolioCategoryPanels.forEach((panel) => {
+    const isActive = panel.dataset.categoryPanel === category;
+    panel.classList.toggle("is-active", isActive);
   });
 
   projectCardButtons.forEach((card) => {

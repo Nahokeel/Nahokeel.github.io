@@ -361,6 +361,8 @@ h3 {
 }
 
 .portfolio-filter-btn {
+  appearance: none;
+  -webkit-appearance: none;
   border: 0;
   background: transparent;
   color: var(--muted);
@@ -374,6 +376,14 @@ h3 {
 .portfolio-filter-btn.is-active {
   color: #161b28;
   background: linear-gradient(140deg, var(--gold), var(--gold-soft));
+}
+
+.portfolio-category-panel {
+  display: none;
+}
+
+.portfolio-category-panel.is-active {
+  display: block;
 }
 
 .project-tile {
@@ -390,6 +400,10 @@ h3 {
 }
 
 button.project-tile {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--card);
+  border: 1px solid var(--line);
   font: inherit;
   cursor: pointer;
   text-align: center;
@@ -432,6 +446,10 @@ a.project-tile:hover {
 
 .project-card-btn.is-hidden {
   display: none;
+}
+
+.project-detail {
+  margin-top: 0.9rem;
 }
 
 .project-note {

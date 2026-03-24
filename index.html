@@ -165,28 +165,34 @@
             </button>
           </div>
 
-          <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Project cards">
-            <button
-              class="project-tile project-card-btn is-active"
-              type="button"
-              data-category="personal"
-              data-project="luarpg"
-            >
-                <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
-                <h4>LuaRPG</h4>
-                <p>Personal game project</p>
-            </button>
+          <div class="portfolio-category-panel is-active" data-category-panel="personal">
+            <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Personal project cards">
+              <button
+                class="project-tile project-card-btn is-active"
+                type="button"
+                data-category="personal"
+                data-project="luarpg"
+              >
+                  <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
+                  <h4>LuaRPG</h4>
+                  <p>Personal game project</p>
+              </button>
+            </div>
+          </div>
 
-            <button
-              class="project-tile project-tile--empty project-card-btn"
-              type="button"
-              data-category="academic"
-              data-project="academic-placeholder"
-            >
-                <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
-                <h4>Academic Project</h4>
-                <p>Click to view placeholder details</p>
-            </button>
+          <div class="portfolio-category-panel" data-category-panel="academic">
+            <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Academic project cards">
+              <button
+                class="project-tile project-tile--empty project-card-btn"
+                type="button"
+                data-category="academic"
+                data-project="academic-placeholder"
+              >
+                  <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
+                  <h4>Academic Project</h4>
+                  <p>Click to view placeholder details</p>
+              </button>
+            </div>
           </div>
 
           <section class="project-detail" id="projectDetail" aria-live="polite">
