@@ -138,37 +138,58 @@
           <div class="section-head">
             <h2>Portfolio</h2>
             <p>
-              Clickable project cards are ready. Later, we can add your real projects and filters.
+              Clickable project cards are grouped into personal and academic projects.
             </p>
           </div>
 
+          <div class="portfolio-categories" role="tablist" aria-label="Project categories">
+            <button
+              class="category-btn is-active"
+              type="button"
+              data-category="personal"
+              role="tab"
+              aria-selected="true"
+            >
+              Personal Project
+            </button>
+            <button
+              class="category-btn"
+              type="button"
+              data-category="academic"
+              role="tab"
+              aria-selected="false"
+            >
+              Academic Project
+            </button>
+          </div>
+
           <div class="project-grid">
-            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+            <a class="project-card" data-category="personal" href="#" target="_blank" rel="noreferrer">
               <div class="project-image project-image--one"></div>
               <h3>Project Placeholder 01</h3>
-              <p>Replace this with your first featured project and live link.</p>
+              <p>Replace this with your first personal project and live link.</p>
               <span>Web Development</span>
             </a>
 
-            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+            <a class="project-card" data-category="personal" href="#" target="_blank" rel="noreferrer">
               <div class="project-image project-image--two"></div>
               <h3>Project Placeholder 02</h3>
-              <p>Show problem, stack, and your exact contribution.</p>
+              <p>Show your personal build, stack, and your exact contribution.</p>
               <span>Application</span>
             </a>
 
-            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+            <a class="project-card" data-category="academic" href="#" target="_blank" rel="noreferrer">
               <div class="project-image project-image--three"></div>
               <h3>Project Placeholder 03</h3>
-              <p>Highlight one measurable outcome for credibility.</p>
-              <span>Web Design</span>
+              <p>Use this for an academic requirement with clear outcomes.</p>
+              <span>Academic Web Design</span>
             </a>
 
-            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+            <a class="project-card" data-category="academic" href="#" target="_blank" rel="noreferrer">
               <div class="project-image project-image--four"></div>
               <h3>Project Placeholder 04</h3>
-              <p>Add screenshot + case study link once available.</p>
-              <span>Dashboard</span>
+              <p>Add your school project screenshot and documentation link.</p>
+              <span>Academic Dashboard</span>
             </a>
           </div>
         </section>
