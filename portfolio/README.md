@@ -1,12 +1,20 @@
-# Portfolio Media Folder
+# Personal Projects
 
-This folder stores your project showcases split into:
+Put your personal or freelance projects in this folder.
 
-- `Academic/`
-- `Personal/`
+## Suggested structure per project
 
-Use each project folder to keep:
+Create one folder per project:
 
-- an icon (`icon.svg`)
-- a preview (`preview.gif`, `preview.mp4`, or `preview.webm`)
-- project notes (`README.md`)
+- `project-name/`
+  - `icon.svg` (project icon)
+  - `preview.gif` or `preview.mp4` (demo)
+  - `README.md` (project summary, stack, and links)
+
+## What to include in each README
+
+- Problem solved
+- Tech stack
+- Your role
+- Live demo link
+- GitHub repository link
