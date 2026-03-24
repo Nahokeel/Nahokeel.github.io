@@ -1,9 +1,9 @@
 :root {
   --bg: #05080f;
-  --surface: #0d111b;
-  --panel: #121827;
-  --card: #161f32;
-  --line: #232e45;
+  --surface: #0f121b;
+  --panel: #141926;
+  --card: #191f2e;
+  --line: #2a3144;
   --text: #f2f6ff;
   --muted: #95a4c4;
   --gold: #f6c453;
@@ -56,9 +56,9 @@ body {
 
 .layout {
   width: min(1240px, calc(100% - 2rem));
-  margin: 1.2rem auto;
+  margin: 1rem auto;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 250px 1fr;
   gap: 1rem;
   align-items: start;
 }
@@ -73,15 +73,15 @@ body {
 }
 
 .profile-panel {
-  padding: 1.35rem;
+  padding: 1.15rem;
   position: sticky;
   top: 1rem;
 }
 
 .avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -100,12 +100,13 @@ h3 {
 }
 
 .profile-panel h1 {
-  font-size: 1.75rem;
+  font-size: 1.9rem;
 }
 
 .profile-role {
-  margin: 0.45rem 0 1rem;
+  margin: 0.35rem 0 1rem;
   color: var(--muted);
+  font-size: 0.9rem;
 }
 
 .profile-meta {
@@ -117,17 +118,17 @@ h3 {
 }
 
 .profile-meta li {
-  padding: 0.65rem;
+  padding: 0.58rem;
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--panel);
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   word-break: break-word;
 }
 
 .profile-meta span {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gold);
@@ -160,6 +161,30 @@ h3 {
 
 .content-panel {
   padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-panel::before,
+.content-panel::after {
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 45%;
+  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+  border-radius: 999px;
+}
+
+.content-panel::before {
+  top: 0;
+  right: -4%;
+  transform: rotate(-3deg);
+}
+
+.content-panel::after {
+  bottom: 0;
+  left: -6%;
+  transform: rotate(-3deg);
 }
 
 .top-nav-wrap {
@@ -171,16 +196,17 @@ h3 {
   gap: 0.55rem;
   padding: 0.45rem;
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--panel);
+  width: fit-content;
 }
 
 .tab-link {
   text-decoration: none;
   color: var(--muted);
-  padding: 0.5rem 0.8rem;
-  border-radius: 10px;
-  font-size: 0.92rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
   font-weight: 500;
   transition: color 180ms ease, background 180ms ease;
 }
@@ -207,14 +233,19 @@ h3 {
 
 .tab-panel {
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 1rem;
+  border-radius: 14px;
+  padding: 1.05rem;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%),
     var(--panel);
 }
 
 .section-head {
   margin-bottom: 1rem;
+}
+
+.sub-head {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .section-head h2 {
@@ -230,7 +261,7 @@ h3 {
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
 }
 
@@ -238,12 +269,17 @@ h3 {
 .resume-card,
 .project-card {
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-radius: 12px;
   background: var(--card);
 }
 
 .info-card {
-  padding: 0.9rem;
+  padding: 0.95rem;
+}
+
+.info-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
 }
 
 .resume-card {
@@ -259,7 +295,7 @@ h3 {
 
 .resume-viewer {
   width: 100%;
-  min-height: 540px;
+  min-height: 520px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: #0d1321;
@@ -286,7 +322,7 @@ h3 {
 
 .project-card h3 {
   margin: 0.7rem 0 0.2rem;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .project-card span {
@@ -323,7 +359,7 @@ h3 {
   border-top: 1px solid var(--line);
   padding-top: 0.8rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
 }
 
 .tab-panel {
@@ -374,6 +410,11 @@ h3 {
   .about-grid,
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .content-panel::before,
+  .content-panel::after {
+    width: 60%;
   }
 
   .resume-viewer {
