@@ -349,6 +349,11 @@ h3 {
   gap: 0.45rem;
   padding: 0.9rem 0.75rem;
   transition: transform 180ms ease, border-color 180ms ease;
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
 }
 
 .project-tile:hover {
@@ -379,6 +384,98 @@ h3 {
 
 .project-tile--empty {
   opacity: 0.8;
+}
+
+.project-detail {
+  display: none;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.05rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 40%),
+    var(--panel);
+  margin-top: 1rem;
+}
+
+.project-detail.is-open {
+  display: block;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: tabReveal 420ms ease forwards;
+}
+
+.project-hero {
+  margin-bottom: 1rem;
+}
+
+.hero-head {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.hero-head h2 {
+  font-size: 1.8rem;
+}
+
+.hero-logo {
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  object-fit: contain;
+  background: #0f1422;
+  padding: 0.35rem;
+}
+
+.hero-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  background: #0f1422;
+}
+
+.project-section {
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.project-section video {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #050912;
+}
+
+.project-section p,
+.project-hero p {
+  color: var(--muted);
+  margin: 0.55rem 0 0;
+}
+
+.close-project-btn {
+  margin-top: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.close-project-btn:hover {
+  border-color: var(--gold);
+  background: rgba(246, 196, 83, 0.1);
 }
 
 .site-footer {

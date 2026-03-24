@@ -3,6 +3,9 @@ const menuToggle = document.getElementById("menuToggle");
 const topNav = document.getElementById("topNav");
 const tabLinks = document.querySelectorAll(".tab-link");
 const tabPanels = document.querySelectorAll(".tab-panel");
+const projectTiles = document.querySelectorAll(".project-tile");
+const projectDetails = document.querySelectorAll(".project-detail");
+const closeProjectBtns = document.querySelectorAll(".close-project-btn");
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -38,6 +41,33 @@ function setActiveTab() {
     panel.hidden = !isActive;
   });
 }
+
+function closeAllProjects() {
+  projectDetails.forEach((detail) => {
+    detail.classList.remove("is-open");
+    detail.hidden = true;
+  });
+}
+
+function openProject(projectId) {
+  closeAllProjects();
+  const projectDetail = document.getElementById(`project-${projectId}`);
+  if (projectDetail) {
+    projectDetail.classList.add("is-open");
+    projectDetail.hidden = false;
+  }
+}
+
+projectTiles.forEach((tile) => {
+  tile.addEventListener("click", () => {
+    const projectId = tile.dataset.project;
+    openProject(projectId);
+  });
+});
+
+closeProjectBtns.forEach((btn) => {
+  btn.addEventListener("click", closeAllProjects);
+});
 
 setActiveTab();
 window.addEventListener("hashchange", setActiveTab);
