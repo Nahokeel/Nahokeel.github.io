@@ -140,125 +140,24 @@
           </div>
 
           <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Project cards">
-            <button class="project-tile" data-project="luarpg">
+            <button class="project-tile" data-project="luarpg" data-project-page="portfolio/LuaRPG/index.html">
                 <img src="portfolio/LuaRPG/Logo.png" alt="LuaRPG logo" />
                 <h4>LuaRPG</h4>
             </button>
 
-            <button class="project-tile" data-project="bahay-kubo">
+            <button class="project-tile" data-project="bahay-kubo" data-project-page="portfolio/Bahay%20Kubo/index.html">
                 <img src="portfolio/Bahay%20Kubo/icon.png" alt="Bahay Kubo icon" />
                 <h4>Bahay Kubo</h4>
             </button>
 
-            <button class="project-tile" data-project="dollys-closet">
+            <button class="project-tile" data-project="dollys-closet" data-project-page="portfolio/Dolly%27s%20Closet/index.html">
               <img src="portfolio/Dolly%27s%20Closet/icon.png" alt="Dolly's Closet icon" />
               <h4>Dolly's Closet</h4>
             </button>
           </div>
 
-          <div class="project-detail" id="project-luarpg" hidden>
-            <section class="project-hero project-hero--center">
-              <img class="hero-logo hero-logo--feature" src="portfolio/LuaRPG/Logo.png" alt="LuaRPG logo" />
-              <h2>LuaRPG</h2>
-              <p>
-                LuaRPG is a simple RPG Roguelike built using the LÖVE 2D framework. The game features random encounters, events, and combat.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/LuaRPG/Beginning.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Describe what this first gameplay clip demonstrates and why it matters
-                to the overall player experience.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/LuaRPG/Goblins.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Explain enemy behavior, combat mechanics, or encounter pacing shown in
-                this clip.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/LuaRPG/Bossfight.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Add your final showcase notes here, including mechanics, effects,
-                player challenge, and balancing decisions.
-              </p>
-            </section>
-
-          </div>
-
-          <div class="project-detail" id="project-bahay-kubo" hidden>
-            <section class="project-hero project-hero--center">
-              <img class="hero-logo hero-logo--feature" src="portfolio/Bahay%20Kubo/logo.png" alt="Bahay Kubo logo" />
-              <h2>Bahay Kubo</h2>
-              <p>
-                Replace this paragraph with your Bahay Kubo project summary,
-                gameplay concept, and what makes this project unique.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/Bahay%20Kubo/First.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Describe what happens in this first gameplay clip and what feature it showcases.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/Bahay%20Kubo/Second.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Explain what this second clip demonstrates and how it improves the player experience.
-              </p>
-            </section>
-          </div>
-
-          <div class="project-detail" id="project-dollys-closet" hidden>
-            <section class="project-hero project-hero--center">
-              <img class="hero-logo hero-logo--feature hero-logo--compact" src="portfolio/Dolly%27s%20Closet/logo.jpg" alt="Dolly's Closet logo" />
-              <h2>Dolly's Closet</h2>
-              <p>
-                Replace this with your Dolly's Closet project overview, core gameplay, and what makes this project unique.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/Dolly%27s%20Closet/First.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Describe what this first clip showcases and how players interact with the core feature.
-              </p>
-            </section>
-
-            <section class="project-section">
-              <video controls preload="metadata" playsinline>
-                <source src="portfolio/Dolly%27s%20Closet/Second.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p>
-                Explain what this second clip demonstrates and how it improves player experience.
-              </p>
-            </section>
+          <div class="project-detail" id="project-detail-viewer" hidden>
+            <div id="project-detail-content"></div>
           </div>
         </section>
 
