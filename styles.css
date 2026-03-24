@@ -333,6 +333,10 @@ h3 {
   padding: 1.2rem;
 }
 
+.certificate-lightbox[hidden] {
+  display: none;
+}
+
 .certificate-lightbox img {
   max-width: min(1100px, 95vw);
   max-height: 88vh;
