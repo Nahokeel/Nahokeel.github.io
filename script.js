@@ -6,7 +6,6 @@ const tabPanels = document.querySelectorAll(".tab-panel");
 const projectTiles = document.querySelectorAll(".project-tile");
 const projectDetailViewer = document.getElementById("project-detail-viewer");
 const projectDetailContent = document.getElementById("project-detail-content");
-const projectCache = new Map();
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -130,12 +129,8 @@ async function openProject(projectId, projectPage) {
   projectDetailContent.innerHTML = '<p class="project-loading">Loading project...</p>';
 
   try {
-    if (!projectCache.has(projectPage)) {
-      const markup = await buildProjectMarkup(projectId, projectPage);
-      projectCache.set(projectPage, markup);
-    }
-
-    projectDetailContent.innerHTML = projectCache.get(projectPage);
+    const markup = await buildProjectMarkup(projectId, projectPage);
+    projectDetailContent.innerHTML = markup;
   } catch (error) {
     projectDetailContent.innerHTML =
       '<p class="project-error">Could not load this project page. Please try again.</p>';
