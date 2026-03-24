@@ -27,13 +27,13 @@
         <p class="profile-role">Web Developer</p>
 
         <ul class="profile-meta">
-          <li><span>Email</span> your.email@example.com</li>
-          <li><span>Phone</span> +63 900 000 0000</li>
-          <li><span>Location</span> Philippines</li>
+          <li><span>Email</span> kohanlee793@yahoo.com</li>
+          <li><span>Phone</span> +63 936 941 1252</li>
+          <li><span>Location</span>Metro Manila, Philippines</li>
         </ul>
 
         <div class="profile-links">
-          <a class="icon-btn" href="https://github.com/your-username" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+          <a class="icon-btn" href="https://github.com/nahokeel" target="_blank" rel="noreferrer" aria-label="GitHub profile">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.52.1.71-.22.71-.5v-1.94c-2.9.63-3.51-1.23-3.51-1.23-.47-1.2-1.16-1.52-1.16-1.52-.95-.65.07-.64.07-.64 1.04.08 1.59 1.08 1.59 1.08.94 1.58 2.44 1.12 3.03.85.09-.67.36-1.12.66-1.38-2.31-.26-4.74-1.16-4.74-5.15 0-1.14.4-2.07 1.07-2.8-.11-.26-.46-1.33.1-2.76 0 0 .87-.28 2.86 1.07a9.8 9.8 0 0 1 5.2 0c1.98-1.35 2.85-1.07 2.85-1.07.56 1.43.21 2.5.1 2.76.67.73 1.07 1.66 1.07 2.8 0 4-2.44 4.88-4.76 5.14.37.33.7.97.7 1.97v2.91c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5z"/>
             </svg>
@@ -138,7 +138,7 @@
           <div class="section-head">
             <h2>Portfolio</h2>
             <p>
-              Clickable project cards are grouped into personal and academic projects.
+              Steam-style showcase pages grouped into personal and academic projects.
             </p>
           </div>
 
@@ -163,34 +163,116 @@
             </button>
           </div>
 
-          <div class="project-grid">
-            <a class="project-card" data-category="personal" href="#" target="_blank" rel="noreferrer">
-              <div class="project-image project-image--one"></div>
-              <h3>Project Placeholder 01</h3>
-              <p>Replace this with your first personal project and live link.</p>
-              <span>Web Development</span>
-            </a>
+          <div class="showcase-list">
+            <article class="showcase-card" data-category="personal">
+              <header class="showcase-header">
+                <img
+                  class="showcase-logo"
+                  src="portfolio/Personal/LuaRPG/Logo.png"
+                  alt="Game logo"
+                />
+                <div>
+                  <h3>My Game Title</h3>
+                  <p class="showcase-subtitle">
+                    Personal Project • Action/Adventure • PC
+                  </p>
+                </div>
+              </header>
 
-            <a class="project-card" data-category="personal" href="#" target="_blank" rel="noreferrer">
-              <div class="project-image project-image--two"></div>
-              <h3>Project Placeholder 02</h3>
-              <p>Show your personal build, stack, and your exact contribution.</p>
-              <span>Application</span>
-            </a>
+              <p class="showcase-intro">
+                Write a short game pitch here. Explain what the game is, who it
+                is for, and what makes it unique in 2-3 lines.
+              </p>
 
-            <a class="project-card" data-category="academic" href="#" target="_blank" rel="noreferrer">
-              <div class="project-image project-image--three"></div>
-              <h3>Project Placeholder 03</h3>
-              <p>Use this for an academic requirement with clear outcomes.</p>
-              <span>Academic Web Design</span>
-            </a>
+              <section class="showcase-step">
+                <h4>Core Gameplay Loop</h4>
+                <p>
+                  Explain the gameplay loop briefly, then show one video clip
+                  focused on player actions and feedback.
+                </p>
+                <video class="showcase-video" controls preload="metadata" playsinline>
+                  <source src="portfolio/Personal/LuaRPG/Beginning.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
 
-            <a class="project-card" data-category="academic" href="#" target="_blank" rel="noreferrer">
-              <div class="project-image project-image--four"></div>
-              <h3>Project Placeholder 04</h3>
-              <p>Add your school project screenshot and documentation link.</p>
-              <span>Academic Dashboard</span>
-            </a>
+              <section class="showcase-step">
+                <h4>Boss Fight and Progression</h4>
+                <p>
+                  Add another short paragraph for progression systems, enemy AI,
+                  or difficulty scaling, then attach the second clip.
+                </p>
+                <video class="showcase-video" controls preload="metadata" playsinline>
+                  <source src="portfolio/Personal/LuaRPG/Goblins.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
+
+              <section class="showcase-step">
+                <h4>Polish and Final Look</h4>
+                <p>
+                  Show your final visual quality pass: VFX, UI polish, audio,
+                  and feel improvements.
+                </p>
+                <video class="showcase-video" controls preload="metadata" playsinline>
+                  <source src="portfolio/Personal/LuaRPG/Bossfight.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
+
+              <section class="build-breakdown">
+                <h4>How I Built It</h4>
+                <ul>
+                  <li>Engine and tools used (example: Unity, Blender, FMOD)</li>
+                  <li>Architecture highlights (state machine, save system, UI flow)</li>
+                  <li>Challenges solved (performance, balancing, debugging)</li>
+                  <li>What I would improve next version</li>
+                </ul>
+              </section>
+            </article>
+
+            <article class="showcase-card" data-category="academic">
+              <header class="showcase-header">
+                <img
+                  class="showcase-logo"
+                  src="portfolio/Academic/media/project-logo.png"
+                  alt="Academic project logo"
+                />
+                <div>
+                  <h3>Academic Project Title</h3>
+                  <p class="showcase-subtitle">
+                    Academic Project • Course Requirement
+                  </p>
+                </div>
+              </header>
+
+              <p class="showcase-intro">
+                Use this section for your school project. Summarize the project
+                objective, scope, and expected outcome.
+              </p>
+
+              <section class="showcase-step">
+                <h4>Project Demo</h4>
+                <p>
+                  Add one short explanatory paragraph and your main demo video.
+                </p>
+                <video class="showcase-video" controls preload="metadata" playsinline>
+                  <source src="portfolio/Academic/media/demo-1.mp4" type="video/mp4" />
+                  <source src="portfolio/Academic/media/demo-1.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
+
+              <section class="build-breakdown">
+                <h4>Implementation Notes</h4>
+                <ul>
+                  <li>Role in the team and responsibilities</li>
+                  <li>Tech stack and design decisions</li>
+                  <li>Constraints and how they were handled</li>
+                  <li>Results and key learning points</li>
+                </ul>
+              </section>
+            </article>
           </div>
         </section>
 
