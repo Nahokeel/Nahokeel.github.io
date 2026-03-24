@@ -142,31 +142,115 @@
           <div class="section-head">
             <h2>Portfolio</h2>
             <p>
-              Click a project card to open its full showcase page.
+              Pick a category, click a project card, and view details below.
             </p>
           </div>
 
-          <section class="project-group" aria-label="Personal projects">
-            <h3>Personal Projects</h3>
-            <div class="project-cards-grid">
-              <a class="project-tile" href="portfolio/Personal/LuaRPG/index.html">
+          <div class="portfolio-filters" role="tablist" aria-label="Project categories">
+            <button
+              class="portfolio-filter-btn is-active"
+              type="button"
+              data-category="personal"
+              aria-selected="true"
+            >
+              Personal Projects
+            </button>
+            <button
+              class="portfolio-filter-btn"
+              type="button"
+              data-category="academic"
+              aria-selected="false"
+            >
+              Academic Projects
+            </button>
+          </div>
+
+          <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Project cards">
+            <button
+              class="project-tile project-card-btn is-active"
+              type="button"
+              data-category="personal"
+              data-project="luarpg"
+            >
                 <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
                 <h4>LuaRPG</h4>
-              </a>
-            </div>
-          </section>
+                <p>Personal game project</p>
+            </button>
 
-          <section class="project-group" aria-label="Academic projects">
-            <h3>Academic Projects</h3>
-            <div class="project-cards-grid">
-              <article class="project-tile project-tile--empty">
+            <button
+              class="project-tile project-tile--empty project-card-btn"
+              type="button"
+              data-category="academic"
+              data-project="academic-placeholder"
+            >
                 <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
-                <h4>Coming Soon</h4>
-              </article>
-            </div>
-            <p class="project-note">
-              Add your academic project pages inside <strong>portfolio/Academic</strong>.
-            </p>
+                <h4>Academic Project</h4>
+                <p>Click to view placeholder details</p>
+            </button>
+          </div>
+
+          <section class="project-detail" id="projectDetail" aria-live="polite">
+            <article class="project-detail-pane is-active" data-project="luarpg">
+              <header class="showcase-header">
+                <img
+                  class="showcase-logo"
+                  src="portfolio/Personal/LuaRPG/Logo.png"
+                  alt="LuaRPG logo"
+                />
+                <div>
+                  <h3>LuaRPG</h3>
+                  <p class="showcase-subtitle">Personal Project • Action/Adventure • PC</p>
+                </div>
+              </header>
+
+              <p class="showcase-intro">
+                Replace this with your short game pitch and what makes LuaRPG unique.
+              </p>
+
+              <section class="project-media-block">
+                <h4>1. Beginning</h4>
+                <p>Intro sequence and early gameplay setup.</p>
+                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
+                  <source src="portfolio/Personal/LuaRPG/Beginning.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
+
+              <section class="project-media-block">
+                <h4>2. Goblins Encounter</h4>
+                <p>Enemy interaction and combat flow in the mid-game section.</p>
+                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
+                  <source src="portfolio/Personal/LuaRPG/Goblins.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
+
+              <section class="project-media-block">
+                <h4>3. Boss Fight</h4>
+                <p>Boss mechanics and final challenge sequence.</p>
+                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
+                  <source src="portfolio/Personal/LuaRPG/Bossfight.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </section>
+            </article>
+
+            <article class="project-detail-pane" data-project="academic-placeholder">
+              <header class="showcase-header">
+                <img
+                  class="showcase-logo"
+                  src="portfolio/Academic/project-icon.svg"
+                  alt="Academic project icon"
+                />
+                <div>
+                  <h3>Academic Projects</h3>
+                  <p class="showcase-subtitle">Add your school project pages next</p>
+                </div>
+              </header>
+              <p class="showcase-intro">
+                Add your academic project details and media in the same format as LuaRPG.
+              </p>
+            </article>
           </section>
         </section>
 
