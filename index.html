@@ -143,57 +143,23 @@
         <section class="tab-panel" id="portfolio" hidden>
           <div class="section-head">
             <h2>Portfolio</h2>
-            <p>
-              Pick a category and open a project page.
-            </p>
           </div>
 
-          <div class="portfolio-filters" role="tablist" aria-label="Project categories">
-            <button
-              class="portfolio-filter-btn is-active"
-              type="button"
-              data-category="academic"
-              aria-selected="true"
-            >
-              Academic Projects
-            </button>
-            <button
-              class="portfolio-filter-btn"
-              type="button"
-              data-category="personal"
-              aria-selected="false"
-            >
-              Personal Projects
-            </button>
-          </div>
+          <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Project cards">
+            <a class="project-tile" href="portfolio/LuaRPG/index.html">
+                <img src="portfolio/LuaRPG/Logo.png" alt="LuaRPG logo" />
+                <h4>LuaRPG</h4>
+            </a>
 
-          <div class="portfolio-category-panel" data-category-panel="personal">
-            <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Personal project cards">
-              <a class="project-tile" href="portfolio/Personal/LuaRPG/index.html">
-                  <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
-                  <h4>LuaRPG</h4>
-              </a>
-
-              <a class="project-tile" href="portfolio/Personal/Bahay%20Kubo/index.html">
-                  <img src="portfolio/Personal/Bahay%20Kubo/icon.png" alt="Bahay Kubo icon" />
-                  <h4>Bahay Kubo</h4>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio-category-panel is-active" data-category-panel="academic">
-            <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Academic project cards">
-              <article class="project-tile project-tile--empty">
-                  <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
-                  <h4>Academic Project</h4>
-                  <p>Add `index.html` in portfolio/Academic/project-name</p>
-              </article>
-            </div>
+            <a class="project-tile" href="portfolio/Bahay%20Kubo/index.html">
+                <img src="portfolio/Bahay%20Kubo/icon.png" alt="Bahay Kubo icon" />
+                <h4>Bahay Kubo</h4>
+            </a>
           </div>
         </section>
 
         <footer class="site-footer">
-          <p>© <span id="year"></span> Ko Han • About • Resume • Portfolio</p>
+          <p>© Nahokeel <span id="year"></span></p>
         </footer>
       </section>
     </main>
