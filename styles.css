@@ -620,9 +620,10 @@ a.project-tile:hover {
 }
 
 .showcase-video--compact {
-  max-width: 760px;
-  max-height: 300px;
-  object-fit: cover;
+  width: min(100%, 860px);
+  max-height: 420px;
+  object-fit: contain;
+  background: #02050d;
 }
 
 .build-breakdown ul {
