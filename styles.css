@@ -324,21 +324,6 @@ h3 {
   background: #0d1321;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-}
-
-.showcase-list {
-  display: grid;
-  gap: 0.9rem;
-}
-
-.project-group {
-  margin-bottom: 1rem;
-}
-
 .project-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
@@ -491,68 +476,7 @@ a.project-tile:hover {
 
 .project-media-block p {
   margin: 0;
-  color: var(--muted);
-}
-
-.showcase-nav {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-bottom: 0.85rem;
-}
-
-.showcase-nav-item {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--card);
-  color: inherit;
-  text-decoration: none;
-  padding: 0.65rem;
-  transition: transform 180ms ease, border-color 180ms ease;
-}
-
-.showcase-nav-item:hover {
-  transform: translateY(-3px);
-  border-color: var(--gold);
-}
-
-.showcase-nav-item img {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 1px solid var(--line);
-  background: #0f1422;
-}
-
-.showcase-nav-item h4 {
-  margin: 0;
-  font-size: 0.95rem;
-}
-
-.showcase-nav-item p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.8rem;
-}
-
-.showcase-nav-item span {
-  margin-left: auto;
-  color: var(--gold);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.showcase-card {
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), transparent 40%),
-    #121a2c;
-  padding: 0.9rem;
+  color: #b7c5e4;
 }
 
 .showcase-header {
@@ -585,28 +509,8 @@ a.project-tile:hover {
 }
 
 .showcase-intro {
-  color: var(--muted);
+  color: #c9d5ef;
   margin: 0.2rem 0 0.9rem;
-}
-
-.showcase-step,
-.build-breakdown {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--card);
-  padding: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.showcase-step h4,
-.build-breakdown h4 {
-  margin: 0 0 0.35rem;
-  font-size: 1rem;
-}
-
-.showcase-step p,
-.build-breakdown li {
-  color: var(--muted);
 }
 
 .showcase-video {
@@ -624,101 +528,6 @@ a.project-tile:hover {
   max-height: 420px;
   object-fit: contain;
   background: #02050d;
-}
-
-.build-breakdown ul {
-  margin: 0.45rem 0 0;
-  padding-left: 1rem;
-}
-
-.portfolio-categories {
-  display: inline-flex;
-  gap: 0.5rem;
-  margin-bottom: 0.9rem;
-  padding: 0.35rem;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  background: #111728;
-}
-
-.category-btn {
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  border-radius: 8px;
-  padding: 0.4rem 0.75rem;
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-  transition: color 180ms ease, background 180ms ease;
-}
-
-.category-btn:hover {
-  color: var(--text);
-}
-
-.category-btn.is-active {
-  color: #161b28;
-  background: linear-gradient(140deg, var(--gold), var(--gold-soft));
-}
-
-.project-card {
-  display: block;
-  padding: 0.8rem;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 180ms ease, border-color 180ms ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--gold);
-}
-
-.project-card.is-hidden {
-  display: none;
-}
-
-.showcase-card.is-hidden {
-  display: none;
-}
-
-.showcase-nav-item.is-hidden {
-  display: none;
-}
-
-.project-card h3 {
-  margin: 0.7rem 0 0.2rem;
-  font-size: 1rem;
-}
-
-.project-card span {
-  color: var(--gold);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-.project-image {
-  border-radius: 10px;
-  height: 150px;
-  border: 1px solid var(--line);
-}
-
-.project-image--one {
-  background: linear-gradient(140deg, #6e75ff, #1a254f 70%);
-}
-
-.project-image--two {
-  background: linear-gradient(140deg, #26c4d8, #16435f 70%);
-}
-
-.project-image--three {
-  background: linear-gradient(140deg, #ff9f5d, #5b2e1c 70%);
-}
-
-.project-image--four {
-  background: linear-gradient(140deg, #b07bff, #312060 70%);
 }
 
 .site-footer {
@@ -768,12 +577,7 @@ a.project-tile:hover {
     display: flex;
   }
 
-  .about-grid,
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .showcase-nav {
+  .about-grid {
     grid-template-columns: 1fr;
   }
 
