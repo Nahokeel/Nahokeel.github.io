@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ko Han | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Ko Han featuring projects, skills, and contact details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow--one"></div>
+    <div class="bg-glow bg-glow--two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home">Ko Han</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        Menu
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero reveal">
+        <p class="eyebrow">Software Engineer • Problem Solver • Builder</p>
+        <h1>
+          I craft useful digital products with clean code and thoughtful design.
+        </h1>
+        <p class="hero-copy">
+          This is your starter portfolio. Swap in your story, your strongest
+          projects, and your links. Keep it focused, visual, and honest.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="#contact">Contact Me</a>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p>Start with 2-4 projects that show range and impact.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>
+              Short summary of the problem, your role, and the result. Add real
+              metrics where possible.
+            </p>
+            <div class="tags">
+              <span>JavaScript</span>
+              <span>API</span>
+              <span>UI</span>
+            </div>
+            <a href="#" aria-label="Open Project One">View case study</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>
+              Highlight technical depth: architecture choices, trade-offs, and
+              what you learned from shipping.
+            </p>
+            <div class="tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Testing</span>
+            </div>
+            <a href="#" aria-label="Open Project Two">View case study</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p>
+              Show versatility: automation, performance, data, or product
+              thinking. Keep each card concise.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+              <span>Automation</span>
+              <span>CLI</span>
+            </div>
+            <a href="#" aria-label="Open Project Three">View case study</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--split reveal" id="about">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            Write 4-6 lines that connect your background, strengths, and what
+            kind of opportunities you are seeking.
+          </p>
+          <p>
+            Keep this section personal but professional. Mention tools you use,
+            domains you enjoy, and the outcomes you care about.
+          </p>
+        </div>
+        <aside class="skill-panel">
+          <h3>Core Skills</h3>
+          <ul>
+            <li>Frontend: HTML, CSS, JavaScript, React</li>
+            <li>Backend: Node.js, Python, REST APIs</li>
+            <li>Quality: Testing, performance, accessibility</li>
+            <li>Workflow: GitHub, CI/CD, agile delivery</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section reveal" id="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Make it easy for recruiters and collaborators to reach you.</p>
+        </div>
+        <div class="contact-card">
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="https://github.com/your-username" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Ko Han. Built with HTML, CSS, and JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
