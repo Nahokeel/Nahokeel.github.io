@@ -144,7 +144,7 @@
           <div class="section-head">
             <h2>Portfolio</h2>
             <p>
-              Pick a category, click a project card, and view details below.
+              Pick a category and open a project page.
             </p>
           </div>
 
@@ -167,153 +167,29 @@
             </button>
           </div>
 
-          <div class="portfolio-category-panel is-active" data-category-panel="personal">
+          <div class="portfolio-category-panel" data-category-panel="personal">
             <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Personal project cards">
-              <button
-                class="project-tile project-card-btn"
-                type="button"
-                data-category="personal"
-                data-project="luarpg"
-              >
+              <a class="project-tile" href="portfolio/Personal/LuaRPG/index.html">
                   <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
                   <h4>LuaRPG</h4>
-              </button>
+              </a>
 
-              <button
-                class="project-tile project-card-btn"
-                type="button"
-                data-category="personal"
-                data-project="bahay-kubo"
-              >
+              <a class="project-tile" href="portfolio/Personal/Bahay%20Kubo/index.html">
                   <img src="portfolio/Personal/Bahay%20Kubo/icon.png" alt="Bahay Kubo icon" />
                   <h4>Bahay Kubo</h4>
-              </button>
+              </a>
             </div>
           </div>
 
-          <div class="portfolio-category-panel" data-category-panel="academic">
+          <div class="portfolio-category-panel is-active" data-category-panel="academic">
             <div class="project-cards-grid project-cards-grid--portfolio" aria-label="Academic project cards">
-              <button
-                class="project-tile project-tile--empty project-card-btn is-active"
-                type="button"
-                data-category="academic"
-                data-project="academic-placeholder"
-              >
+              <article class="project-tile project-tile--empty">
                   <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
                   <h4>Academic Project</h4>
-                  <p>Click to view placeholder details</p>
-              </button>
+                  <p>Add `index.html` in portfolio/Academic/project-name</p>
+              </article>
             </div>
           </div>
-
-          <section class="project-detail" id="projectDetail" aria-live="polite">
-            <article class="project-detail-pane" data-project="luarpg">
-              <header class="showcase-header">
-                <img
-                  class="showcase-logo"
-                  src="portfolio/Personal/LuaRPG/Logo.png"
-                  alt="LuaRPG logo"
-                />
-                <div>
-                  <h3>LuaRPG</h3>
-                  <p class="showcase-subtitle">Personal Project • Action/Adventure • PC</p>
-                </div>
-              </header>
-
-              <img
-                class="showcase-hero-logo"
-                src="portfolio/Personal/LuaRPG/Logo.png"
-                alt="LuaRPG featured logo"
-              />
-
-              <p class="showcase-intro">
-                LuaRPG is a simple RPG roguelike built with the LOVE 2D framework.
-                The game features random encounters, events, and turn-based combat.
-              </p>
-
-              <section class="project-media-block">
-                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/LuaRPG/Beginning.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p>Intro sequence and early gameplay setup.</p>
-              </section>
-
-              <section class="project-media-block">
-                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/LuaRPG/Goblins.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p>Enemy interaction and combat flow in the mid-game section.</p>
-              </section>
-
-              <section class="project-media-block">
-                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/LuaRPG/Bossfight.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p>Boss mechanics and final challenge sequence.</p>
-              </section>
-            </article>
-
-            <article class="project-detail-pane" data-project="bahay-kubo">
-              <header class="showcase-header">
-                <img
-                  class="showcase-logo"
-                  src="portfolio/Personal/Bahay%20Kubo/icon.png"
-                  alt="Bahay Kubo icon"
-                />
-                <div>
-                  <h3>Bahay Kubo</h3>
-                  <p class="showcase-subtitle">Personal Project • Game Prototype</p>
-                </div>
-              </header>
-
-              <img
-                class="showcase-hero-logo"
-                src="portfolio/Personal/Bahay%20Kubo/logo.png"
-                alt="Bahay Kubo featured logo"
-              />
-
-              <p class="showcase-intro">
-                Replace this with your short description of Bahay Kubo and what gameplay
-                experience or theme it focuses on.
-              </p>
-
-              <section class="project-media-block">
-                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/Bahay%20Kubo/First.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p>First gameplay showcase clip.</p>
-              </section>
-
-              <section class="project-media-block">
-                <video class="showcase-video showcase-video--compact" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/Bahay%20Kubo/Second.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <p>Second gameplay showcase clip.</p>
-              </section>
-            </article>
-
-            <article class="project-detail-pane is-active" data-project="academic-placeholder">
-              <header class="showcase-header">
-                <img
-                  class="showcase-logo"
-                  src="portfolio/Academic/project-icon.svg"
-                  alt="Academic project icon"
-                />
-                <div>
-                  <h3>Academic Projects</h3>
-                  <p class="showcase-subtitle">Add your school project pages next</p>
-                </div>
-              </header>
-              <p class="showcase-intro">
-                Add your academic project details and media in the same format as LuaRPG.
-              </p>
-            </article>
-          </section>
         </section>
 
         <footer class="site-footer">
