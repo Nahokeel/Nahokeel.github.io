@@ -382,10 +382,6 @@ h3 {
   font-size: 0.82rem;
 }
 
-.project-tile--empty {
-  opacity: 0.8;
-}
-
 .project-detail {
   display: none;
   border: 1px solid var(--line);
