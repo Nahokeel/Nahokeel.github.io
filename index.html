@@ -6,142 +6,155 @@
     <title>Ko Han | Portfolio</title>
     <meta
       name="description"
-      content="Portfolio website for Ko Han featuring projects, skills, and contact details."
+      content="Portfolio website for Ko Han with About, Resume, and Portfolio tabs."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-glow bg-glow--one"></div>
-    <div class="bg-glow bg-glow--two"></div>
+    <div class="scene-glow scene-glow--left"></div>
+    <div class="scene-glow scene-glow--right"></div>
 
-    <header class="site-header">
-      <a class="brand" href="#home">Ko Han</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-        Menu
-      </button>
-      <nav class="site-nav" id="siteNav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    <main class="layout">
+      <aside class="profile-panel">
+        <div class="avatar" aria-hidden="true">KH</div>
+        <h1>Ko Han</h1>
+        <p class="profile-role">Web Developer</p>
 
-    <main id="home">
-      <section class="hero reveal">
-        <p class="eyebrow">Software Engineer • Problem Solver • Builder</p>
-        <h1>
-          I craft useful digital products with clean code and thoughtful design.
-        </h1>
-        <p class="hero-copy">
-          This is your starter portfolio. Swap in your story, your strongest
-          projects, and your links. Keep it focused, visual, and honest.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn--solid" href="#projects">View Projects</a>
-          <a class="btn btn--ghost" href="#contact">Contact Me</a>
+        <ul class="profile-meta">
+          <li><span>Email</span> your.email@example.com</li>
+          <li><span>Phone</span> +63 900 000 0000</li>
+          <li><span>Location</span> Philippines</li>
+        </ul>
+
+        <div class="profile-links">
+          <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
-      </section>
+      </aside>
 
-      <section class="section reveal" id="projects">
-        <div class="section-head">
-          <h2>Featured Projects</h2>
-          <p>Start with 2-4 projects that show range and impact.</p>
-        </div>
+      <section class="content-panel">
+        <header class="top-nav-wrap">
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            Menu
+          </button>
+          <nav class="top-nav" id="topNav">
+            <a class="tab-link active" href="#about">About</a>
+            <a class="tab-link" href="#resume">Resume</a>
+            <a class="tab-link" href="#portfolio">Portfolio</a>
+          </nav>
+        </header>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>Project One</h3>
+        <section class="tab-panel" id="about">
+          <div class="section-head">
+            <h2>About Me</h2>
             <p>
-              Short summary of the problem, your role, and the result. Add real
-              metrics where possible.
+              I build practical websites and apps with a clean visual style,
+              fast performance, and clear user flow. I enjoy turning ideas into
+              polished products that are easy to use and maintain.
             </p>
-            <div class="tags">
-              <span>JavaScript</span>
-              <span>API</span>
-              <span>UI</span>
-            </div>
-            <a href="#" aria-label="Open Project One">View case study</a>
-          </article>
+          </div>
 
-          <article class="project-card">
-            <h3>Project Two</h3>
+          <div class="about-grid">
+            <article class="info-card">
+              <h3>What I Do</h3>
+              <p>
+                Frontend development, responsive interfaces, and component-based
+                UI systems focused on usability and consistency.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>How I Work</h3>
+              <p>
+                I keep work iterative and testable: build, validate, refine,
+                then ship with version control and clean documentation.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Current Focus</h3>
+              <p>
+                Strong portfolio projects with meaningful outcomes, clear
+                process notes, and production-ready quality.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="resume">
+          <div class="section-head">
+            <h2>Resume</h2>
             <p>
-              Highlight technical depth: architecture choices, trade-offs, and
-              what you learned from shipping.
+              Keep your original DOCX and also export a PDF for better in-browser viewing.
             </p>
-            <div class="tags">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Testing</span>
-            </div>
-            <a href="#" aria-label="Open Project Two">View case study</a>
-          </article>
+          </div>
 
-          <article class="project-card">
-            <h3>Project Three</h3>
+          <article class="resume-card">
             <p>
-              Show versatility: automation, performance, data, or product
-              thinking. Keep each card concise.
+              Place your files as <strong>resume.docx</strong> and
+              <strong>resume.pdf</strong> in this project root.
             </p>
-            <div class="tags">
-              <span>Python</span>
-              <span>Automation</span>
-              <span>CLI</span>
+            <div class="resume-actions">
+              <a href="resume.docx">Download DOCX</a>
+              <a href="resume.pdf" target="_blank" rel="noreferrer">Open PDF</a>
             </div>
-            <a href="#" aria-label="Open Project Three">View case study</a>
+            <object data="resume.pdf" type="application/pdf" class="resume-viewer">
+              <p>
+                PDF preview unavailable on this browser.
+                <a href="resume.pdf">Open the PDF resume here</a>.
+              </p>
+            </object>
           </article>
-        </div>
-      </section>
+        </section>
 
-      <section class="section section--split reveal" id="about">
-        <div>
-          <h2>About Me</h2>
-          <p>
-            Write 4-6 lines that connect your background, strengths, and what
-            kind of opportunities you are seeking.
-          </p>
-          <p>
-            Keep this section personal but professional. Mention tools you use,
-            domains you enjoy, and the outcomes you care about.
-          </p>
-        </div>
-        <aside class="skill-panel">
-          <h3>Core Skills</h3>
-          <ul>
-            <li>Frontend: HTML, CSS, JavaScript, React</li>
-            <li>Backend: Node.js, Python, REST APIs</li>
-            <li>Quality: Testing, performance, accessibility</li>
-            <li>Workflow: GitHub, CI/CD, agile delivery</li>
-          </ul>
-        </aside>
-      </section>
+        <section class="tab-panel" id="portfolio">
+          <div class="section-head">
+            <h2>Portfolio</h2>
+            <p>
+              Clickable project cards are ready. Later, we can add your real projects and filters.
+            </p>
+          </div>
 
-      <section class="section reveal" id="contact">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>Make it easy for recruiters and collaborators to reach you.</p>
-        </div>
-        <div class="contact-card">
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
-          <a href="https://github.com/your-username" target="_blank" rel="noreferrer"
-            >GitHub</a
-          >
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer"
-            >LinkedIn</a
-          >
-        </div>
+          <div class="project-grid">
+            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+              <div class="project-image project-image--one"></div>
+              <h3>Project Placeholder 01</h3>
+              <p>Replace this with your first featured project and live link.</p>
+              <span>Web Development</span>
+            </a>
+
+            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+              <div class="project-image project-image--two"></div>
+              <h3>Project Placeholder 02</h3>
+              <p>Show problem, stack, and your exact contribution.</p>
+              <span>Application</span>
+            </a>
+
+            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+              <div class="project-image project-image--three"></div>
+              <h3>Project Placeholder 03</h3>
+              <p>Highlight one measurable outcome for credibility.</p>
+              <span>Web Design</span>
+            </a>
+
+            <a class="project-card" href="#" target="_blank" rel="noreferrer">
+              <div class="project-image project-image--four"></div>
+              <h3>Project Placeholder 04</h3>
+              <p>Add screenshot + case study link once available.</p>
+              <span>Dashboard</span>
+            </a>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <p>© <span id="year"></span> Ko Han • About • Resume • Portfolio</p>
+        </footer>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Ko Han. Built with HTML, CSS, and JS.</p>
-    </footer>
 
     <script src="script.js"></script>
   </body>
