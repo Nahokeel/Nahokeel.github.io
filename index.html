@@ -142,7 +142,7 @@
           <div class="section-head">
             <h2>Portfolio</h2>
             <p>
-              Steam-style showcase pages grouped into personal and academic projects.
+              Choose a category and open each project page.
             </p>
           </div>
 
@@ -167,135 +167,27 @@
             </button>
           </div>
 
-          <div class="showcase-nav" aria-label="Project list">
-            <a class="showcase-nav-item" data-category="personal" href="#luarpg-showcase">
+          <div class="project-directory" aria-label="Project list">
+            <a
+              class="project-list-item"
+              data-category="personal"
+              href="portfolio/Personal/LuaRPG/index.html"
+            >
               <img src="portfolio/Personal/LuaRPG/Logo.png" alt="LuaRPG logo" />
               <div>
                 <h4>LuaRPG</h4>
-                <p>Personal game project</p>
+                <p>Personal game project showcase</p>
               </div>
-              <span>View</span>
+              <span>Open</span>
             </a>
 
-            <a class="showcase-nav-item" data-category="academic" href="#academic-showcase">
+            <article class="project-list-item project-list-item--empty" data-category="academic">
               <img src="portfolio/Academic/project-icon.svg" alt="Academic project icon" />
               <div>
-                <h4>Academic Project</h4>
-                <p>Course requirement showcase</p>
+                <h4>No Academic Project Yet</h4>
+                <p>Add an HTML file in portfolio/Academic to list your school projects.</p>
               </div>
-              <span>View</span>
-            </a>
-          </div>
-
-          <div class="showcase-list">
-            <article class="showcase-card" id="luarpg-showcase" data-category="personal">
-              <header class="showcase-header">
-                <img
-                  class="showcase-logo"
-                  src="portfolio/Personal/LuaRPG/Logo.png"
-                  alt="Game logo"
-                />
-                <div>
-                  <h3>My Game Title</h3>
-                  <p class="showcase-subtitle">
-                    Personal Project • Action/Adventure • PC
-                  </p>
-                </div>
-              </header>
-
-              <p class="showcase-intro">
-                Write a short game pitch here. Explain what the game is, who it
-                is for, and what makes it unique in 2-3 lines.
-              </p>
-
-              <section class="showcase-step">
-                <h4>Core Gameplay Loop</h4>
-                <p>
-                  Explain the gameplay loop briefly, then show one video clip
-                  focused on player actions and feedback.
-                </p>
-                <video class="showcase-video" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/LuaRPG/Beginning.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </section>
-
-              <section class="showcase-step">
-                <h4>Boss Fight and Progression</h4>
-                <p>
-                  Add another short paragraph for progression systems, enemy AI,
-                  or difficulty scaling, then attach the second clip.
-                </p>
-                <video class="showcase-video" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/LuaRPG/Goblins.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </section>
-
-              <section class="showcase-step">
-                <h4>Polish and Final Look</h4>
-                <p>
-                  Show your final visual quality pass: VFX, UI polish, audio,
-                  and feel improvements.
-                </p>
-                <video class="showcase-video" controls preload="metadata" playsinline>
-                  <source src="portfolio/Personal/LuaRPG/Bossfight.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </section>
-
-              <section class="build-breakdown">
-                <h4>How I Built It</h4>
-                <ul>
-                  <li>Engine and tools used (example: Unity, Blender, FMOD)</li>
-                  <li>Architecture highlights (state machine, save system, UI flow)</li>
-                  <li>Challenges solved (performance, balancing, debugging)</li>
-                  <li>What I would improve next version</li>
-                </ul>
-              </section>
-            </article>
-
-            <article class="showcase-card" id="academic-showcase" data-category="academic">
-              <header class="showcase-header">
-                <img
-                  class="showcase-logo"
-                  src="portfolio/Academic/media/project-logo.png"
-                  alt="Academic project logo"
-                />
-                <div>
-                  <h3>Academic Project Title</h3>
-                  <p class="showcase-subtitle">
-                    Academic Project • Course Requirement
-                  </p>
-                </div>
-              </header>
-
-              <p class="showcase-intro">
-                Use this section for your school project. Summarize the project
-                objective, scope, and expected outcome.
-              </p>
-
-              <section class="showcase-step">
-                <h4>Project Demo</h4>
-                <p>
-                  Add one short explanatory paragraph and your main demo video.
-                </p>
-                <video class="showcase-video" controls preload="metadata" playsinline>
-                  <source src="portfolio/Academic/media/demo-1.mp4" type="video/mp4" />
-                  <source src="portfolio/Academic/media/demo-1.webm" type="video/webm" />
-                  Your browser does not support the video tag.
-                </video>
-              </section>
-
-              <section class="build-breakdown">
-                <h4>Implementation Notes</h4>
-                <ul>
-                  <li>Role in the team and responsibilities</li>
-                  <li>Tech stack and design decisions</li>
-                  <li>Constraints and how they were handled</li>
-                  <li>Results and key learning points</li>
-                </ul>
-              </section>
+              <span>Soon</span>
             </article>
           </div>
         </section>

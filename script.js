@@ -4,8 +4,7 @@ const topNav = document.getElementById("topNav");
 const tabLinks = document.querySelectorAll(".tab-link");
 const tabPanels = document.querySelectorAll(".tab-panel");
 const categoryButtons = document.querySelectorAll(".category-btn");
-const showcaseCards = document.querySelectorAll(".showcase-card[data-category]");
-const showcaseNavItems = document.querySelectorAll(".showcase-nav-item[data-category]");
+const projectListItems = document.querySelectorAll(".project-list-item[data-category]");
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -52,12 +51,7 @@ function setCategory(category) {
     button.setAttribute("aria-selected", String(isActive));
   });
 
-  showcaseCards.forEach((card) => {
-    const shouldShow = card.dataset.category === category;
-    card.classList.toggle("is-hidden", !shouldShow);
-  });
-
-  showcaseNavItems.forEach((item) => {
+  projectListItems.forEach((item) => {
     const shouldShow = item.dataset.category === category;
     item.classList.toggle("is-hidden", !shouldShow);
   });
